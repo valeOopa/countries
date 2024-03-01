@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+#home__countries{
+  display: grid;
+}
+.countries__country{
+  background: #48e;
+  width: max-content;
+}
