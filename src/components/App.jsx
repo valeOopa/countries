@@ -10,7 +10,7 @@ function App() {
     <>
     {/*//* Home y Encabezado que estará por defecto en la App */ }
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
-      <Home/>
+      <Home darkMode={darkMode} />
     </>
   )
 }
