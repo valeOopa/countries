@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import GlassLight from '../../svg/GlassLight';
+import Glass from '../../svg/Glass';
 
 export function NavigationCountries({ darkMode, valueSearch, setValueSearch, setValueSelect }) {
   //* Barra de navegación del componente que contiene todos los paises.
@@ -9,10 +11,9 @@ export function NavigationCountries({ darkMode, valueSearch, setValueSearch, set
   const selectHandle = e => setValueSelect(e.target.value);
 
   return (
-
     <nav id="countries__navigation" className='home__navigation'>
       <div id='navigation__searchBar--container' className={darkMode ? 'backgroundDarkBlue':'backgroundVeryLight'}>
-        <img src="src\assets\icons\magnifying-glass-solid.png" className={darkMode ?  'icon-light' :'searchBar__img--light'} id='searchBar__img' alt='glass' />
+      {darkMode?<GlassLight id='searchBar__glass' />:<Glass id='searchBar__glass' />  }
         <input type="text" name="" id="navigation__searchBar" className={darkMode ? 'backgroundDarkBlue navigation__searchBar--dark colorWhite':'navigation__searchBar--light'} placeholder='Search for a country...' value={valueSearch} onChange={inputHandle} />
       </div>
       

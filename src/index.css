@@ -34,8 +34,7 @@
 #header__buttonColorMode:hover{
   cursor: pointer;
 }
-#buttonColorMode__img{
-  width: .85em;
+#buttonColorMode__moon{
   margin-right: 6px;
 }
 #header__title{
@@ -66,18 +65,8 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-#searchBar__img{
+#searchBar__glass{
   margin: auto;
-  width: .85em;
-  object-fit: contain;
-}
-.searchBar__img--light{
-  filter: opacity(.3);
-  -webkit-filter: opacity(.3);
-}
-.icon-light{
-  filter: invert(1);
-  -webkit-filter: invert(1);
 }
 #navigation__searchBar{
   border: none;
@@ -170,8 +159,8 @@
 #navigationExpand__backButton:hover{
   cursor: pointer;
 }
-#backButton__arrow-img{
-  width: .85em;
+#backButton__arrow{
+  rotate: 180deg;
   margin-right: 10px;
 }
 
