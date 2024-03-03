@@ -17,7 +17,7 @@ export function NavigationCountries({ darkMode, valueSearch, setValueSearch, set
         <input type="text" name="" id="navigation__searchBar" className={darkMode ? 'backgroundDarkBlue navigation__searchBar--dark colorWhite':'navigation__searchBar--light'} placeholder='Search for a country...' value={valueSearch} onChange={inputHandle} />
       </div>
       
-      <select id="navigation__filter" defaultValue='none' onChange={selectHandle} className={darkMode ? 'backgroundDarkBlue darkBorder colorWhite':'lightBorder colorDarkBlue'}>
+      <select id="navigation__filter" defaultValue='none' onChange={selectHandle} className={darkMode ? 'backgroundDarkBlue darkBorder colorWhite':'lightBorder colorDarkBlue backgroundVeryLight'}>
         <option className="filter__options" value="none"  disabled>Filter by Region</option>
         <option className="filter__options" value="none">World</option>
         <option className="filter__options" value="africa">Africa</option>
