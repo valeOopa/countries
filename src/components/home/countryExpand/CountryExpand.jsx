@@ -6,7 +6,7 @@ export function CountryExpand({darkMode,info, searchBorderCountry}) {
 
 
   //* Algunas propiedades de la infromación(info) esta envuelta en un objeto y array, asi que hay que mostrarla con comas.
-  const currencies = Object.values(info.currencies[0]).join(', ');
+  const currencies =  info.currencies?Object.values(info.currencies[0]).join(', '):"None";
   const languages = Object.values(info.languages[0]).join(', ');
 
   return (
